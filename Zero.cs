@@ -8,7 +8,17 @@ namespace garys_garage
 
         public void ChargeBattery()
         {
-            // method definition omitted
+            Console.WriteLine($"Your Zero is now charged to {BatteryKWh}kWh");
+        }
+
+        public override void Drive()
+        {
+            Console.WriteLine($"The {MainColor} Zero zips past. YEOWWWWWW!");
+        }
+
+        public override void Turn(string direction)
+        {
+            Console.WriteLine($"The vehicle carefully turns {direction}");
         }
     }
 }

@@ -13,7 +13,18 @@ namespace garys_garage
 
         public override void Drive()
         {
-            Console.WriteLine("Zoooooom!");
+            Console.WriteLine($"The {MainColor} Cessna flashes by you. ZoooOOOOOOooM!");
+        }
+
+        public override void Stop()
+        {
+            Console.WriteLine($"The {MainColor} Cessna rolls to a stop after breaking for a mile down the runway.");
+        }
+
+        public override void Turn(string direction)
+        {
+            Console.WriteLine($"The {MainColor} Cessna dips a wing and gracefully veers {direction}");
+
         }
     }
 }

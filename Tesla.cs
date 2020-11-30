@@ -13,7 +13,12 @@ namespace garys_garage
 
         public override void Drive()
         {
-            Console.WriteLine($"The {MainColor} Ram drives past. RRrrrrrummbbble!");
+            Console.WriteLine($"The {MainColor} Tesla drives past. mmmmmmMMMMMMmmmmm!");
+        }
+
+        public override void Stop()
+        {
+            Console.WriteLine($"The {MainColor} Tesla stops, making no sound at all, as if it never moved.");
         }
     }
 }
