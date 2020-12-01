@@ -2,12 +2,15 @@ using System;
 
 namespace garys_garage
 {
-    public class Tesla : Vehicle
+    public class Tesla : Vehicle, IElectric
     {
-        public double BatteryKWh { get; set; }
+        public double BatteryKWh { get; set; } = 100;
+
+        public double CurrentChargePercentage { get; set; } = 40;
 
         public void ChargeBattery()
         {
+            CurrentChargePercentage = 100;
             Console.WriteLine($"Your Tesla is now charged to {BatteryKWh}kWh");
         }
 
